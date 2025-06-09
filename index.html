@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js" defer></script>
+  <title>plus</title>
+  <script src="https://cdn.jsdelivr.net/npm/eruda" onload="eruda.init()" defer>
+  </script>
+</head>
+<body>
+	<h1>plus</h1>
+	<div id="container_resultados">
+		   <section id="horas">
+   	<textarea class="labelListas" name="horatext" id="horatext" rows="8" cols="">04:52:34
+11:00:31
+11:57:04
+13:50:37</textarea>
+   	<label id="lab"></label>
+   	<input type="text" name="hora1" id="hora1" value="10:27:37" />
+   	<input type="text" name="hora3" id="hora3" value="14:23:09" />
+   	<input type="text" name="hora4" id="hora4" value="15:20:43" />
+   	<input type="text" name="hora2" id="hora2" value="18:31:09" />
+   	<label id="lb"></label>
+   	<button type="button" id="hm">enviar</button>
+   </section>
+			<section name="input_user" class="input_textarea_user scroll_bar">
+		 <div class="header_input_textarea_user">
+		 	<h3>CONTROLE E AJUSTES</h3>
+		 	<h3>ULTRA POA RS</h3>
+		 </div>
+			<textarea class="labelListas" name="" id="listasText" rows="8" cols="">02175203085;MAURICIO MARQUES RIOS;2024-09-20;2025-03-20;1;02175203085</textarea>
+			<div class="botoes">
+			<button type="button" id="btn_ajustar" >AJUSTAR</button>
+			<button type="button" id="btn_ponto" onclick="calculoFuncionario()">PONTO</button>
+			<button type="button" id="btn_ponto_auto" onclick="completePonto()">PONTOS</button>
+			<button type="button" id="btn_limpar" onclick="lim()">LIMPAR</button>
+			<button type="button" id="btn_ajust" >AJUST</button>
+			</div>
+			</section>
+   <section id="boxe_resultados">
+			<!-- JS -->
+			<div class="resultados cabecalho">
+				<h3>DETALHES DOS RESULTADOS</h3>
+			</div>
+			<div class="resultados corpo">
+				<h4>
+					
+      REGISTROS ESTACIONAMENTO:
 
+				</h4>
+			</div>
+			<div class="resultados rodape">
+				<div>
+					<h4>
+						LISTA REGISTROS AJUSTADOS:
+					</h4>
+				</div>
+			</div> 
+			<div class="resultados copiados" id="copiados">
+				<div>
+					<h4>
+						LISTA REGISTROS COPIADOS:
+					</h4>
+
+				</div>
+			</div> 
+			<!-- FIM JS -->
+   </section>
+
+		</div>
+</body>
+</html>
