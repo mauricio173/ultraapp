@@ -206,3 +206,26 @@ function diferencaEmMinutos(hora1, hora2) {
 
 	return (t2 - t1) / 60000;
 }
+
+
+function calculoEmMinutos(horaInicio, horaFim) {
+	const [h1, m1, s1] = horaInicio.split(":").map(Number);
+	const [h2, m2, s2] = horaFim.split(":").map(Number);
+
+	const totalInicio = h1 * 60 + m1 + s1 / 60;
+	const totalFim = h2 * 60 + m2 + s2 / 60;
+// console.log(formatarHoras(Math.round((totalFim - totalInicio) * 100) / 100),"Math.round");
+	return Math.round((totalFim - totalInicio) * 100) / 100; 
+	// arredonda para 2 casas decimais
+}
+
+
+function formatarHoras(totalMinutos) {
+	let horas = Math.floor(totalMinutos / 60);
+	let minutos = totalMinutos % 60;
+	let tot = `${horas.toString().padStart(2, "0").split(".")}:${minutos.toString().padStart(2, "0")}`;
+	// console.log(tot,"tot");
+	
+	return `${horas.toString().padStart(2, "0")}:${minutos.toString().padStart(2, "0")}`;
+}
+
