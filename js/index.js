@@ -29,3 +29,4 @@ function calcularHorasTrabalhadas(horarios) {
 	}
 	return 0;
 }
+
